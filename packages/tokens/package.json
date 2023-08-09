@@ -1,5 +1,5 @@
 {
-  "name": "@ignite/tokens",
+  "name": "@ignite-dordox/tokens",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@ignite/ts-config": "*",
-    "@ignite/eslint-config": "*",
+    "@ignite-dordox/ts-config": "*",
+    "@ignite-dordox/eslint-config": "*",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
   }

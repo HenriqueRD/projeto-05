@@ -1,4 +1,4 @@
-import { colors, fonts } from '@ignite/tokens'
+import { colors, fonts } from '@ignite-dordox/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

@@ -1,4 +1,4 @@
 {
-  "extends": "@ignite/ts-config/base.json",
+  "extends": "@ignite-dordox/ts-config/base.json",
   "include": ["src"]
 }

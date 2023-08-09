@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, BoxProps, Text } from '@ignite/react'
+import { Box, BoxProps, Text } from '@ignite-dordox/react'
 
 export default {
   title: 'Surfaces/Box',

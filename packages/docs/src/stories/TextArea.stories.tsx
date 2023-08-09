@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Text, TextArea, TextAreaProps } from '@ignite/react'
+import { Box, Text, TextArea, TextAreaProps } from '@ignite-dordox/react'
 
 export default {
   title: 'Form/TextArea',
