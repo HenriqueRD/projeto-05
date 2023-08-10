@@ -6,7 +6,17 @@ export default {
   component: TextInput,
   args: {
     placeholder: 'Text input placeholder',
+    prefix: '',
+    sizes: 'md',
     disabled: false,
+  },
+  argTypes: {
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
   },
   decorators: [
     (Story) => {

@@ -1,16 +1,20 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
-import { ComponentProps, ElementType } from 'react'
+import { ComponentProps, ElementRef, forwardRef } from 'react'
 import { Input, Prefix, TextInputContainer } from './styles'
 
 export interface TextInputProps extends ComponentProps<typeof Input> {
   prefix?: string
-  as?: ElementType
+  variant: 'sm' | 'md'
 }
-export function TextInput({ prefix, ...props }: TextInputProps) {
-  return (
-    <TextInputContainer>
-      {!!prefix && <Prefix>{prefix}</Prefix>}
-      <Input {...props} />
-    </TextInputContainer>
-  )
-}
+export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
+  ({ prefix, variant, ...props }: TextInputProps, ref) => {
+    return (
+      <TextInputContainer variant={variant}>
+        {!!prefix && <Prefix>{prefix}</Prefix>}
+        <Input ref={ref} {...props} />
+      </TextInputContainer>
+    )
+  },
+)
+
+TextInput.displayName = 'TextInput'
